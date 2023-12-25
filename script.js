@@ -3,7 +3,6 @@ const black = document.querySelector(".black");
 
 circles.forEach((circle) => {
     circle.addEventListener("click", ({ target }) => {
-        console.log(target.classList[1]);
         const { backgroundColor } = window.getComputedStyle(target);
         document.body.style.backgroundColor = backgroundColor;
 
